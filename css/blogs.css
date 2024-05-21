@@ -1,0 +1,103 @@
+.main-container {
+    padding: 4%;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 28px;
+}
+
+.outer-topic-nav {
+    width: 100%;
+}
+
+.topic-nav {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3mm;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 5%;
+    width: 100%;
+}
+
+.topic-nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topic-nav a:hover {
+    color: rgb(255, 100, 126);
+}
+
+.topic-nav hr {
+    margin: 3.6% 0;
+}
+
+.outer-cards-container>h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards-container .card {
+    border-radius: 3mm;
+    margin-bottom: 6%;
+}
+
+.cards-container .cropper {
+    border-radius: 3mm 3mm 0 0;
+    overflow: hidden;
+}
+
+.cards-container .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    .main-container {
+        padding: 2%;
+        flex-direction: row;
+    }
+    .outer-topic-nav {
+        width: 20%;
+    }
+    .topic-nav {
+        position: sticky;
+        top: 2%;
+    }
+    .topic-nav hr {
+        margin: 6% 0;
+    }
+    .outer-cards-container {
+        width: 80%;
+    }
+    .outer-cards-container>h1 {
+        font-size: 3rem;
+        margin-bottom: 2%;
+    }
+    .cards-container {
+        flex-direction: row;
+    }
+    .cards-container .card {
+        width: 48%;
+        margin-bottom: 4%;
+    }
+    .cards-container .card-body .card-text {
+        flex: 1;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .cards-container .card {
+        width: 32%;
+    }
+}

@@ -1,0 +1,77 @@
+.mobile-search-bar {
+    padding: 4%;
+}
+
+.mobile-search-bar input {
+    display: initial;
+    width: 83%;
+}
+
+.mobile-search-bar button {
+    width: 15%;
+    margin: auto;
+}
+
+.form-control:focus {
+    border-color: black;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.item-container {
+    padding: 0 4%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+    margin-bottom: 6%;
+}
+
+.item {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5%;
+    width: 80%;
+}
+
+.item h3, .item p {
+    margin: auto;
+}
+
+.item img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .mobile-search-bar {
+        display: none;
+    }
+    .form-control:focus {
+        border-color: none;
+        box-shadow: none;
+    }
+    nav .spacer {
+        padding: 0 2%;
+    }
+    nav .spacer input {
+        margin: auto;
+    }
+    nav .spacer button {
+        margin: auto 1%;
+    }
+    .item-container {
+        padding: 2% 2% 0 2%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        margin-bottom: 1.4%;
+    }
+    .item {
+        margin: 5%;
+    }
+}

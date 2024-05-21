@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/blog-common.css">
+    <link rel="stylesheet" href="../css/intro-to-yoga.css">
+    <link rel="icon" type="image/png" href="../../assets/favicon-32x32.png"/>
+    <title>Intro To Yoga-Blog | Fitness Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+    <a class="go-back" href="../../html/blogs.html">&#8249;&#8249;&#8249;</a>
+    <div class="content-section" ng-app="yoga">
+        <figure class="main-img">
+            <img src="../../assets/intro-to-yoga.jpg" alt="intro to yoga thumbnail">
+            <figcaption>Image from Google</figcaption>
+        </figure>
+
+        <h1>INTRO TO YOGA</h1>
+        <p class="written-by">- Written by Kevin Joshi</p>
+        <hr>
+        <p>Yoga is a group of physical, mental, and spiritual
+            practices or disciplines which originated in ancient India.Yoga is one of the six Āstika(orthodox)
+            schools
+            of
+            Indian philosophical traditions.<br><br>
+            There is a broad variety of yoga schools, practices, and goals in Hinduism, Buddhism, and Jainism.
+            The term 'Yoga' in the Western world often denotes a modern form of hatha yoga and yoga as exercise,
+            consisting
+            largely of the postures or asanas.<br><br>
+            The practice of yoga has been thought to date back to pre - vedic Indian traditions; possibly in the
+            Indus
+            valley
+            civilization around 3000 BCE.Yoga is mentioned in the Rigveda, and also referenced in the
+            Upanishads, though it most likely developed as a systematic study around the 5th and 6th centuries BCE,
+            in
+            ancient India's ascetic and Śramaṇa movements. The chronology of earliest texts describing
+            yoga - practices is unclear, varyingly credited to the Upanishads.The Yoga Sutras of Patanjali date from
+            the
+            2nd century BCE, and gained prominence in the west in the 20th century after being first introduced by
+            Swami Vivekananda.Hatha yoga texts began to emerge sometime between the 9th and 11th century with origns
+            in tantra.<br><br>
+            Yoga gurus from India later introduced yoga to the West, following the success of Swami Vivekananda in
+            the late 19th and early 20th century with his adaptation of yoga tradition, excluding asanas.Outside
+            India,
+            it
+            has developed into a posture - based physical fitness, stress - relief and relaxation technique.Yoga in
+            Indian
+            traditions, however, is more than physical exercise; it has a meditative and spiritual core.One of the
+            six major orthodox schools of Indian philosophy is also called Yoga, which has its own epistemology,
+            ontology
+            and metaphysics, and is closely related to Samkhya philosophy.</p>
+
+        <h3>Types of Yoga</h3>
+        <hr>
+        <table ng-controller="yogaTypes" class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" class="column-1">#</th>
+                    <th scope="col" class="column-2">Name</th>
+                    <th scope="col" class="column-3">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="x in name">
+                    <th scope="row">{{ $index + 1 }}</th>
+                    <td>{{ x }}</td>
+                    <td>{{ desc[x] }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Morning Yoga for Beginners</h3>
+        <hr>
+        <iframe src="https://www.youtube.com/embed/VaoV1PrYft4" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <h3>Read More</h3>
+        <hr>
+        <ul ng-controller="yogaReferences">
+            <li ng-repeat="x in name"><a href="{{ links[x] }}">{{ x }}</a></li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="../js/intro-to-yoga.js"></script>
+</body>
+
+</html>

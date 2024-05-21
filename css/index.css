@@ -1,0 +1,81 @@
+.outer-corousel {
+    width: 96%;
+    margin: 20px auto 10px;
+    border-radius: 3mm;
+    overflow: hidden;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.my-carousel-indicators, .corousel-control-icon {
+    border-radius: 2mm;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.caption-1, .caption-2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.website-name {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 40px;
+}
+
+.caption-2 {
+    margin-bottom: 10px;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    width: 96%;
+    margin: 0 auto 70px;
+    border-radius: 2mm;
+    box-shadow: 0mm 1mm 1mm rgba(95, 95, 95, 0.5);
+    overflow: hidden;
+}
+
+.navigator a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 6px 0px;
+}
+
+.navigator a:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .outer-corousel {
+        width: 590px;
+        margin: 20px auto 10px;
+    }
+    .caption-1 {
+        margin-bottom: 60px;
+    }
+    .website-name {
+        font-size: 6rem;
+        margin-bottom: 84px;
+    }
+    .caption-2 {
+        margin-bottom: 10px;
+    }
+    .navigator {
+        flex-direction: row;
+        margin-bottom: 90px;
+    }
+    .navigator a {
+        padding: 12px;
+    }
+}

@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    box-shadow: 0mm 1mm 1mm rgba(95, 95, 95, 0.5);
+    background-color: rgb(30, 30, 30);
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: left;
+}
+
+nav a:active:not(.spacer) {
+    background-color: rgb(20, 20, 20);
+}
+
+nav div {
+    display: none;
+    z-index: 1;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 45px;
+    width: 25%;
+    box-shadow: 0mm 1mm 1mm rgba(95, 95, 95, 0.5);
+    background-color: rgb(30, 30, 30);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+}
+
+nav .current-page {
+    flex: 1;
+}
+
+nav .dropdown {
+    display: none;
+}
+
+nav .close-menu {
+    display: none;
+    padding: 0px 12.48px;
+    font-size: 200%;
+    max-height: 47px;
+}
+
+nav .hamburger-menu {
+    max-width: 43px;
+}
+
+a:hover {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    position: relative;
+    padding: 2% 0;
+    bottom: 0;
+}
+
+footer>p {
+    margin: 0;
+}
+
+footer .made-by {
+    font-size: 1.3rem;
+}
+
+footer .my-email {
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 600px) {
+    nav div, nav .hamburger-menu, nav .close-menu {
+        display: none;
+    }
+    nav .dropdown {
+        display: flex;
+        flex-direction: row;
+    }
+    nav .spacer {
+        flex: 1;
+    }
+    nav a:hover:not(.current-page, .spacer) {
+        background-color: rgb(20, 20, 20);
+    }
+    nav .current-page {
+        flex: 0;
+        background-color: #ff0000c0;
+    }
+    footer {
+        padding: 0.8% 0;
+    }
+}

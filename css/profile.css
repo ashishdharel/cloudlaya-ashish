@@ -1,0 +1,90 @@
+.login_form_div {
+    width: 300px;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 70px;
+    border-radius: 3mm;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+}
+
+.login_form_div p {
+    color: rgba(255, 0, 0, 0.8);
+    font-size: 0.8em;
+    margin: 0;
+    margin: 3% 0 0 3%;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons .b1 {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.buttons .b2 {
+    width: 70%;
+}
+
+.buttons .btn-success {
+    background-color: rgb(38, 165, 0);
+}
+
+.registration_form_div {
+    display: none;
+    padding: 4%;
+    border-radius: 3mm;
+    max-width: 96%;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.registration_form_div h1, .registration_form_div p {
+    display: inline;
+    margin: 0;
+}
+
+.registration_form_div p {
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+}
+
+.registration_form_div p:hover {
+    cursor: pointer;
+}
+
+.registration_form_div .gender, .registration_form_div .options, .registration_form_div .agreement {
+    margin-bottom: 1rem;
+}
+
+.registration_form_div .ag1, .registration_form_div .ag2 {
+    padding-left: 0;
+}
+
+.registration_form_div .form-control:focus {
+    border-color: rgb(38, 165, 0);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgb(38, 165, 0, 0.5);
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .login_form_div {
+        margin-top: 10%;
+        margin-bottom: 90px;
+    }
+    .registration_form_div {
+        max-width: 80%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding: 1.5%;
+    }
+}
